@@ -173,7 +173,7 @@ nav {
   position: fixed;
   top: 1.6rem;
   right: 2rem;
-  width: 100%;
+  width: 80%;
 }
 
 /* OPEN-CLOSE MENÜ */
@@ -202,10 +202,11 @@ nav {
 
 .nav-sidebar {
   width: calc(0% - 100%);
-  /* background-color: rgb(27, 26, 26); */
+  background-color: rgba(27, 26, 26, 0.618);
+  border-radius: 0.5rem;
   z-index: 1000;
   transition: all 1s ease-in-out;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 .nav-item {
   border: 0.1rem solid transparent;
@@ -294,7 +295,7 @@ nav {
   position: absolute;
   top: 2%;
   left: 47%;
-  width: 22rem;
+  width: 22.5rem;
   border: 5px solid white;
 }
 .img-aboutme-3 {
