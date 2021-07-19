@@ -356,7 +356,7 @@ nav {
   height: 103vh;
   background-color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(/css/tablecloth.jpg);
+    url(css/tablecloth.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
