@@ -13,7 +13,6 @@
     />
     <title>FABERCHEESE</title>
     <script src="script.js"></script>
-    <script src="jquery.js"></script>
   </head>
   <body>
     <div class="navigation__first">
@@ -22,10 +21,10 @@
         <span class="nav-sidebar sticky">
           <ul class="nav-links">
             <li class="nav-item">
-              <a href="#section1">Rólam</a>
+              <a  onclick="scrollToSection('section1')" class="links">Rólam</a>
             </li>
             <li class="nav-item">
-              <a href="#">Termékek</a>
+              <a onclick="scrollToSection('section2')" class="links">Termékek</a>
             </li>
             <li class="nav-item">
               <a href="#"">Galéria</a>
@@ -118,6 +117,88 @@
         <img src="resources/img/sörös.jpg" alt="sörös" class="img-aboutme-7" />
       </div>
     </section>
+    <section class="section__products" id="section2">
+      <ul class="cheese-showcase ul-first">
+        <li>
+          <figure class="cheese-photo">
+            <img
+              src="resources/img/caciocavallo2-1.jpg"
+              alt="caciocavallo"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure class="cheese-photo">
+            <img
+              src="resources/img/treciascamorza-1.JPG"
+              alt="trecia scamorza"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure class="cheese-photo">
+            <img
+              src="resources/img/stringcheese2-1.jpg"
+              alt="string cheese"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure class="cheese-photo">
+            <img src="resources/img/camembert-1.jpg" alt="Camembert" />
+          </figure>
+        </li>
+        <li>
+          <figure class="cheese-photo">
+            <img src="resources/img/camembert-1.jpg" alt="Camembert" />
+          </figure>
+        </li>
+      </ul>
+      <ul class="cheese-showcase ul-sec">
+        <li>
+          <figure class="cheese-photo">
+            <img
+              src="resources/img/mayafekete2-1.jpg"
+              alt="Maya Black"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure class="cheese-photo">
+            <img
+              src="resources/img/johngold1-1.jpg"
+              alt="John Gold"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure class="cheese-photo">
+            <img
+              src="resources/img/dryjack-1.jpg"
+              alt="Dry Jack"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure class="cheese-photo">
+            <img
+              src="resources/img/havarti1-1.jpg"
+              alt="Havarti"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure class="cheese-photo">
+            <img
+              src="resources/img/havarti1-1.jpg"
+              alt="Havarti"
+            />
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section__galery"></section>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

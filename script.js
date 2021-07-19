@@ -29,3 +29,15 @@ let toggleNav = function () {
     toggleNavStatus = false;
   }
 };
+
+// SCROLL
+function scrollToSection(e) {
+  var elmnt = document.getElementById(e);
+  elmnt.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+  console.log(elmnt);
+}
+
+// GALERY (MODAL)
