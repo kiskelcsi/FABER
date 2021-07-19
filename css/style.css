@@ -241,7 +241,7 @@ nav {
       rgba(255, 255, 255, 0.797),
       rgba(255, 255, 255, 0.756)
     ),
-    url(/css/blacknwhite.jpg);
+    url(/resources/img/blacknwhite.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -356,7 +356,7 @@ nav {
   height: 103vh;
   background-color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(/css/tablecloth.jpg);
+    url(/resources/img/tablecloth.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -444,7 +444,7 @@ nav {
       rgba(255, 255, 255, 0.797),
       rgba(255, 255, 255, 0.756)
     ),
-    url(css/blacknwhite.jpg);
+    url(/resources/img/blacknwhite.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
