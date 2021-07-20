@@ -21,16 +21,20 @@
         <span class="nav-sidebar sticky">
           <ul class="nav-links">
             <li class="nav-item">
-              <a  onclick="scrollToSection('section1')" class="links">Rólam</a>
+              <a onclick="scrollToSection('section1')" class="links">Rólam</a>
             </li>
             <li class="nav-item">
-              <a onclick="scrollToSection('section2')" class="links">Termékek</a>
+              <a onclick="scrollToSection('section2')" class="links"
+                >Termékek</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#"">Galéria</a>
+              <a onclick="scrollToSection('section3')" class="links">Galéria</a>
             </li>
             <li class="nav-item">
-              <a href="#"">A Műhely</a>
+              <a onclick="scrollToSection('section2')" class="links"
+                >A Műhely</a
+              >
             </li>
             <li class="nav-item">
               <a href="#">Akiket ajánlok</a>
@@ -117,155 +121,197 @@
         <img src="resources/img/sörös.jpg" alt="sörös" class="img-aboutme-7" />
       </div>
     </section>
-    <section class="section__products " id="section2">
-      <ul class="cheese-showcase ul-first animated-box">
+    <section class="section__products" id="section2">
+      <h2 class="products-heading">Fedezd fel a sajtokat.</h2>
+      <ul class="cheese-showcase animated-box">
         <li>
-
-          <figure  class="cheese-photo tooltip">
+          <figure class="cheese-photo tooltip">
             <img
-            data-modal-target="#cacio"
+              data-modal-target="#cacio"
               src="resources/img/caciocavallo2-1.jpg"
               alt="caciocavallo"
             />
             <span class="tooltiptext">Caciocavallio</span>
-              
           </figure>
         </li>
         <li>
           <figure class="cheese-photo tooltip">
             <img
-            data-modal-target="#trecia"
+              data-modal-target="#trecia"
               src="resources/img/treciascamorza1.jpg"
               alt="trecia scamorza"
             />
             <span class="tooltiptext">Trecia Scamorza</span>
-
           </figure>
         </li>
         <li>
           <figure class="cheese-photo tooltip">
             <img
-            data-modal-target="#cacio"
+              data-modal-target="#cacio"
               src="resources/img/stringcheese2-1.jpg"
               alt="string cheese"
             />
-            <span class="tooltiptext ">Stringcheese</span>
-
-          </figure>
-        </li>
-        <li>
-          <figure class="cheese-photo tooltip">
-            <img 
-            data-modal-target="#trecia"
-            src="resources/img/camembert-1.jpg" alt="Camembert" />
-            <span class="tooltiptext">Camembert</span>
-
+            <span class="tooltiptext">Stringcheese</span>
           </figure>
         </li>
         <li>
           <figure class="cheese-photo tooltip">
             <img
-            data-modal-target="#cacio"
-             src="resources/img/camembert-1.jpg" alt="Camembert" />
+              data-modal-target="#trecia"
+              src="resources/img/camembert-1.jpg"
+              alt="Camembert"
+            />
             <span class="tooltiptext">Camembert</span>
-
+          </figure>
+        </li>
+        <li>
+          <figure class="cheese-photo tooltip">
+            <img
+              data-modal-target="#cacio"
+              src="resources/img/camembert-1.jpg"
+              alt="Camembert"
+            />
+            <span class="tooltiptext">Camembert</span>
           </figure>
         </li>
       </ul>
-      <ul class="cheese-showcase ul-sec animated-box">
+      <ul class="cheese-showcase animated-box">
         <li>
           <figure class="cheese-photo tooltip">
             <img
-            data-modal-target="#trecia"
+              data-modal-target="#trecia"
               src="resources/img/mayafekete2-1.jpg"
               alt="Maya Black"
             />
             <span class="tooltiptext">&nbsp; Maya - Fekete</span>
-
           </figure>
         </li>
         <li>
           <figure class="cheese-photo tooltip">
-            <img 
-            data-modal-target="#cacio"
+            <img
+              data-modal-target="#cacio"
               src="resources/img/johngold1-1.jpg"
               alt="John Gold"
             />
             <span class="tooltiptext">John Gold</span>
-
           </figure>
         </li>
         <li>
           <figure class="cheese-photo tooltip">
             <img
-            data-modal-target="#trecia"
+              data-modal-target="#trecia"
               src="resources/img/dryjack-1.jpg"
               alt="Dry Jack"
             />
             <span class="tooltiptext">Dry Jack</span>
-
           </figure>
         </li>
         <li>
           <figure class="cheese-photo tooltip">
             <img
-            data-modal-target="#cacio"
+              data-modal-target="#cacio"
               src="resources/img/havarti1-1.jpg"
               alt="Havarti"
             />
             <span class="tooltiptext">Havarti</span>
-
           </figure>
         </li>
         <li>
           <figure class="cheese-photo tooltip">
             <img
-            data-modal-target="#trecia"
+              data-modal-target="#trecia"
               src="resources/img/havarti1-1.jpg"
               alt="Havarti"
             />
             <span class="tooltiptext popuptext">Havarti</span>
-
           </figure>
         </li>
       </ul>
     </section>
-      <div class="modal" id="cacio">
-        <div class="modal-header">
-          <div class="title">Caciocavallio</div>
-          <button data-close-button class="close-button">&times;</button>
-        </div>
-        <div class="picture-container"><img class="modal-picture" src="resources/img/caciocavallo_copertina.jpg" alt="cacio"></div>
-        <div class="modal-body"><p>Caciocavallo [ˌKatʃokaˈvallo] egy típusa kinyújtott-túrós sajt ból készült juhvagy tehéntejet. Végig gyártják Dél-Olaszország, különösen a Apennin-hegység és a Gargano félsziget. Könnycsepp alakú, ízében hasonló az idős dél-olaszhoz Provolone sajt, kemény ehető héjjal.Wikipedia - Enciklopédia  site:hu.wikiqube.net</p>
-        <p>A sajt olasz neve caciocavallo szó szerint "lósajtot" jelent, és általában azt gondolják, hogy a név abból ered, hogy két sajtformát mindig kötéllel kötnek össze, majd hagynak érlelni, ha egy "cavallo" -ot, azaz átfedést tesznek vízszintes rúdra vagy ágra .[Wikipedia - Enciklopédia  site:hu.wikiqube.net</p>
-      <p>Nyilvánvalóan a caciocavallót Kr.e. 500 körül említette először Hippokratészhangsúlyozva a "görögök okosságát a sajtkészítésben".[2]A "caciocavallo" névhez hasonló sajtfajták az egész Balkánon és Dél-Olaszországban elterjedtek. Szicíliában a Ragusano DOP-nak, amelyet helyben "caciocavallo ragusano" néven ismernek, el kellett dobnia a "caciocavallo" megnevezést a DOP státusz megszerzése érdekében.Wikipedia - Enciklopédia  site:hu.wikiqube.net</p></div>
+    <div class="modal" id="cacio">
+      <div class="modal-header">
+        <div class="title">Caciocavallio</div>
+        <button data-close-button class="close-button">&times;</button>
       </div>
-      <div  id="overlay">
+      <div class="picture-container">
+        <img
+          class="modal-picture"
+          src="resources/img/caciocavallo_copertina.jpg"
+          alt="cacio"
+        />
       </div>
-      <div class="modal" id="trecia">
-        <div class="modal-header">
-          <div class="title">Trecia Scamorza</div>
-          <button data-close-button class="close-button">&times;</button>
-        </div>
-        <div class="picture-container"><img class="modal-picture" src="resources/img/scamorza.JPG" alt="Scamorza"></div>
-        <div class="modal-body"><p> Camorza is an Italian, spun paste cow’s milk cheese belonging to the pasta filata family. Shaped similar to a provolone in pear shape, it is available in many other forms as well. A semi-soft white cheese with a texture comparable to that of a firm, dry Mozzarella, Scamorza is made throughout Apulia and in some parts of Campania and Molise.
+      <div class="modal-body">
+        <p>
+          Caciocavallo [ˌKatʃokaˈvallo] egy típusa kinyújtott-túrós sajt ból
+          készült juhvagy tehéntejet. Végig gyártják Dél-Olaszország, különösen
+          a Apennin-hegység és a Gargano félsziget. Könnycsepp alakú, ízében
+          hasonló az idős dél-olaszhoz Provolone sajt, kemény ehető
+          héjjal.Wikipedia - Enciklopédia site:hu.wikiqube.net
+        </p>
+        <p>
+          A sajt olasz neve caciocavallo szó szerint "lósajtot" jelent, és
+          általában azt gondolják, hogy a név abból ered, hogy két sajtformát
+          mindig kötéllel kötnek össze, majd hagynak érlelni, ha egy "cavallo"
+          -ot, azaz átfedést tesznek vízszintes rúdra vagy ágra .[Wikipedia -
+          Enciklopédia site:hu.wikiqube.net
+        </p>
+        <p>
+          Nyilvánvalóan a caciocavallót Kr.e. 500 körül említette először
+          Hippokratészhangsúlyozva a "görögök okosságát a sajtkészítésben".[2]A
+          "caciocavallo" névhez hasonló sajtfajták az egész Balkánon és
+          Dél-Olaszországban elterjedtek. Szicíliában a Ragusano DOP-nak,
+          amelyet helyben "caciocavallo ragusano" néven ismernek, el kellett
+          dobnia a "caciocavallo" megnevezést a DOP státusz megszerzése
+          érdekében.Wikipedia - Enciklopédia site:hu.wikiqube.net
+        </p>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="modal" id="trecia">
+      <div class="modal-header">
+        <div class="title">Trecia Scamorza</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="picture-container">
+        <img
+          class="modal-picture"
+          src="resources/img/scamorza.JPG"
+          alt="Scamorza"
+        />
+      </div>
+      <div class="modal-body">
+        <p>
+          Camorza is an Italian, spun paste cow’s milk cheese belonging to the
+          pasta filata family. Shaped similar to a provolone in pear shape, it
+          is available in many other forms as well. A semi-soft white cheese
+          with a texture comparable to that of a firm, dry Mozzarella, Scamorza
+          is made throughout Apulia and in some parts of Campania and Molise.
+          The cheese is made from pasteurised cow’s milk or from a mixture of
+          cow and sheep milk. At the end of the cheese making process, which is
+          akin to Mozzarella, the cheeses are hanged together in strings to
+          ripen for about two weeks. The process of ripening the cheese has
+          given Scamorza its name, which in southern Italy means ‘beheaded’.
+        </p>
+        <p>
+          After two weeks of ripening, the cheese is sold as it is or smoked.
+          The smoked variant, called ‘Scamorzi Affumicate’ is made by smoking
+          the cheese over flaming straw for around 10 to 15 minutes. A fresh
+          version of Scamorza is also sold within a few days of production. The
+          texture of Scamorza is elastic, stringy and has less moisture than
+          Mozzarella. In addition, the flavour is more piquant, milky and
+          creamy. Smoked Scamorza has a subtle, smoky flavour with a sweet,
+          light caramel note. Scamorza is used as a substitute for Mozzarella as
+          it imparts more interest in the recipe. Since Scamorza has excellent
+          melting qualities, it is best known to flavour baking dishes, for
+          griddling or topped with prosciutto for extra zest. The smoky flavour
+          of Scamorza pairs well with oak-aged Chardonnay, Pinot Girgio or
+          Orvieto.
+        </p>
+      </div>
+    </div>
+    <div id="overlay"></div>
 
-          The cheese is made from pasteurised cow’s milk or from a mixture of cow and sheep milk. At the end of the cheese making process, which is akin to Mozzarella, the cheeses are hanged together in strings to ripen for about two weeks. The process of ripening the cheese has given Scamorza its name, which in southern Italy means ‘beheaded’.</p>
-        <p>After two weeks of ripening, the cheese is sold as it is or smoked. The smoked variant, called ‘Scamorzi Affumicate’ is made by smoking the cheese over flaming straw for around 10 to 15 minutes. A fresh version of Scamorza is also sold within a few days of production.
-          The texture of Scamorza is elastic, stringy and has less moisture than Mozzarella. In addition, the flavour is more piquant, milky and creamy. Smoked Scamorza has a subtle, smoky flavour with a sweet, light caramel note.
-          
-          Scamorza is used as a substitute for Mozzarella as it imparts more interest in the recipe. Since Scamorza has excellent melting qualities, it is best known to flavour baking dishes, for griddling or topped with prosciutto for extra zest. The smoky flavour of Scamorza pairs well with oak-aged Chardonnay, Pinot Girgio or Orvieto.</p>
-      </div>
-      </div>
-      <div  id="overlay">
-      </div>
-
-    
-
-
-    <section class="section__galery">
-  
-    </section>
+    <section class="section__galery" id="section3"></section>
 
     <script
       type="module"
