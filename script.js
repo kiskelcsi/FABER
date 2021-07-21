@@ -9,7 +9,7 @@ let toggleNav = function () {
 
   if (toggleNavStatus === false) {
     getSidebarUl.style.visibility = "visible";
-    getSidebar.style.width = "75%";
+    getSidebar.style.width = "1000px";
 
     let arrayLength = getSidebarLinks.length;
     for (let i = 0; i < arrayLength; i++) {
@@ -18,7 +18,7 @@ let toggleNav = function () {
 
     toggleNavStatus = true;
   } else if (toggleNavStatus === true) {
-    getSidebar.style.width = "0px";
+    getSidebar.style.width = "0rem";
 
     let arrayLength = getSidebarLinks.length;
     for (let i = 0; i < arrayLength; i++) {
@@ -32,7 +32,7 @@ let toggleNav = function () {
 
 // SCROLL
 function scrollToSection(e) {
-  var elmnt = document.getElementById(e);
+  let elmnt = document.getElementById(e);
   elmnt.scrollIntoView({
     behavior: "smooth",
     block: "start",
@@ -62,6 +62,27 @@ function addClass(element, className) {
     element.className += " " + className;
   }
 }
+// ¨SLIDE IN
+const slideIn = document.querySelectorAll(".slideIn");
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.35,
+});
+
+slideIn.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
+});
 
 // MODAL BOX
 
@@ -102,28 +123,65 @@ function closeModal(modal) {
   overlay.classList.remove("active");
 }
 
-// Get the modal
-var modal = document.getElementById("myModal");
+// GALERY SLIDER
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function () {
-  modal.style.display = "block";
+const slides = document.querySelectorAll(".slide");
+const btnLeft = document.querySelector(".btn_left");
+const btnRight = document.querySelector(".btn_right");
+let curSlide = 0;
+const maxSlide = slides.length;
+const goToSlide = function (slide) {
+  slides.forEach(
+    (s, i) => (s.style.transform = `translateX(${100 * (i - curSlide)}%)`)
+  );
 };
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+goToSlide(0);
+const nextSlide = function () {
+  if (curSlide === maxSlide - 1) {
+    curSlide = 0;
+  } else {
+    curSlide++;
   }
+  goToSlide(curSlide);
 };
+const prevSlide = function () {
+  if (curSlide === 0) {
+    curSlide = maxSlide - 1;
+  } else {
+    curSlide--;
+  }
+  goToSlide(curSlide);
+};
+
+btnRight.addEventListener("click", nextSlide);
+btnLeft.addEventListener("click", prevSlide);
+let closePic = document.getElementById("lb-back");
+document.addEventListener("keydown", function (e) {
+  console.log(e);
+  if (e.key === "ArrowLeft") prevSlide();
+  e.key === "ArrowRight" && nextSlide();
+  e.key === "Escape" && closePic.classList.remove("show");
+});
+// ZOOM OUT
+
+let zoomImg = function () {
+  let clone = this.cloneNode();
+  clone.classList.remove("zoomD");
+  let lb = document.getElementById("lb-img");
+  lb.innerHTML = "";
+  lb.appendChild(clone);
+  lb = document.getElementById("lb-back");
+  lb.classList.add("show");
+};
+
+window.addEventListener("load", function () {
+  let images = document.getElementsByClassName("zoomD");
+  if (images.length > 0) {
+    for (let img of images) {
+      img.addEventListener("click", zoomImg);
+    }
+  }
+  document.getElementById("lb-back").addEventListener("click", function () {
+    this.classList.remove("show");
+  });
+});

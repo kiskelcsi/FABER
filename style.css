@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -16,9 +16,9 @@ html {
 body {
   font-family: "Merriweather", sans-serif;
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #777;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 10px 10px 10px 10px;
   background-color: black;
 }
 
@@ -42,7 +42,7 @@ body {
     0 95%,
     0 5%
   );
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
 }
 /* HEADING */
 
@@ -59,20 +59,20 @@ body {
   color: rgb(225, 224, 224);
   text-transform: uppercase;
   backface-visibility: hidden;
-  padding-left: 2rem;
+  padding-left: 20px;
 }
 .heading-primary-main {
   display: block;
-  font-size: 6rem;
+  font-size: 60px;
   font-weight: 300;
-  letter-spacing: 3.5rem;
+  letter-spacing: 35px;
   animation: moveInLeft 2s ease-out;
 }
 .heading-primary-sub {
   display: block;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 300;
-  letter-spacing: 1.75rem;
+  letter-spacing: 17.4px;
   animation: moveInRight 2s ease-out;
 }
 /* KEYFRAMES */
@@ -88,11 +88,11 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem);
+    transform: translateX(-100px);
   }
 
   80% {
-    transform: translateX(1rem);
+    transform: translateX(10px);
   }
   100% {
     opacity: 1;
@@ -102,10 +102,10 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem);
+    transform: translateX(100px);
   }
   80% {
-    transform: translateX(-1rem);
+    transform: translateX(-10px);
   }
   100% {
     opacity: 1;
@@ -115,7 +115,7 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(3rem);
+    transform: translateY(30px);
   }
   100% {
     opacity: 1;
@@ -129,8 +129,8 @@ nav {
   position: absolute;
   width: 100%;
   height: 15vh;
-  padding-left: 4.8rem;
-  padding-right: 4.8rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -140,7 +140,7 @@ nav {
   position: absolute;
 
   max-width: 100%;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
   z-index: 1000;
 }
 
@@ -150,7 +150,7 @@ nav {
 }
 
 .logo {
-  height: 9.5rem;
+  height: 6rem;
 }
 
 .nav-links {
@@ -161,18 +161,18 @@ nav {
 
 .nav-item a {
   display: inline-block;
-  padding: 1.6rem 2.5rem;
+  padding: 1rem 1.5rem;
   text-decoration: none;
   color: white;
 }
 
 .logo img {
-  width: 28rem;
+  width: 17.5rem;
   vertical-align: middle;
 }
 
 .menu-icon {
-  font-size: 4.8rem;
+  font-size: 3rem;
   color: white;
 }
 .menu-icon:hover {
@@ -188,8 +188,8 @@ nav {
 
 .sticky {
   position: fixed;
-  top: 2.5rem;
-  right: 3.2rem;
+  top: 1.6rem;
+  right: 2rem;
   width: 80%;
 }
 
@@ -208,7 +208,7 @@ nav {
 .nav-sidebar ul li span,
 .nav-sidebar ul li a {
   display: flex;
-  font-size: 1.9rem;
+  font-size: 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -220,19 +220,19 @@ nav {
 .nav-sidebar {
   width: calc(0% - 100%);
   background-color: rgba(27, 26, 26, 0.618);
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
   z-index: 1000;
   transition: all 1s ease-in-out;
   /* opacity: 0.8; */
 }
 .nav-item {
-  border: 0.15rem solid transparent;
+  border: 0.1rem solid transparent;
 }
 
 .nav-item:active,
 .nav-item:hover {
   transition: border-bottom 0.4s;
-  border-bottom: 0.15rem solid white;
+  border-bottom: 0.1rem solid white;
   opacity: 0.5;
 }
 .links {
@@ -240,7 +240,7 @@ nav {
 }
 /* SECTION ABOUT ME */
 .section__me {
-  height: auto;
+  height: 200vh;
   background-color: white;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.797),
@@ -252,7 +252,7 @@ nav {
   background-position: center;
 
   display: flex;
-  margin-top: 1.6rem;
+  margin-top: 1rem;
   clip-path: polygon(
     5% 0,
     95% 0,
@@ -266,37 +266,37 @@ nav {
 }
 
 .profile__me {
-  height: 12.8rem;
+  height: 8rem;
   border-radius: 50%;
 }
 .strong_word {
-  font-size: 2.4rem;
+  font-size: 1.5rem;
 }
 .paragraph {
-  line-height: 2.9rem;
-  font-size: 1.75rem;
-  margin-top: 3.2rem;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+  margin-top: 2rem;
   width: 50%;
 }
 /* PARAGRAPHS */
 .first__part {
   color: black;
-  margin-bottom: 4.8rem;
+  margin-bottom: 3rem;
 }
 .second__part {
   color: black;
-  margin-bottom: 4.8rem;
+  margin-bottom: 3rem;
 }
 .third__part {
   color: black;
-  margin-bottom: 4.8rem;
+  margin-bottom: 3rem;
 }
 
 /* IMAGES */
 .prof__pic {
-  margin-top: 3.2rem;
-  height: 12.8rem;
-  width: 12.8rem;
+  margin-top: 2rem;
+  height: 8rem;
+  width: 8rem;
 }
 
 .images-about-me {
@@ -308,14 +308,14 @@ nav {
   position: absolute;
   border: 5px solid white;
   top: 5%;
-  left: 3%;
-  width: 32rem;
+  left: 2%;
+  width: 20rem;
 }
 .img-aboutme-2 {
   position: absolute;
   top: 2%;
-  left: 46%;
-  width: 36rem;
+  left: 47%;
+  width: 22.5rem;
   border: 5px solid white;
 }
 .img-aboutme-3 {
@@ -323,35 +323,35 @@ nav {
   top: 25%;
   left: 45%;
 
-  width: 40rem;
+  width: 25rem;
 }
 .img-aboutme-4 {
   position: absolute;
   top: 24%;
-  left: 5%;
-  width: 30.5rem;
+  left: 2%;
+  width: 19rem;
   align-self: flex-start;
 }
 .img-aboutme-5 {
   position: absolute;
   top: 53%;
-  width: 41rem;
+  width: 27rem;
   border: 5px solid white;
   align-self: flex-start;
 }
 .img-aboutme-6 {
   position: absolute;
-  top: 76%;
-  left: 54%;
-  width: 27.2rem;
+  top: 78%;
+  left: 60%;
+  width: 17rem;
   border: 5px solid white;
   align-self: flex-start;
 }
 .img-aboutme-7 {
   position: absolute;
-  top: 53%;
-  left: 54%;
-  width: 23rem;
+  top: 51%;
+  left: 60%;
+  width: 17rem;
   border: 5px solid white;
   align-self: flex-start;
 }
@@ -366,7 +366,7 @@ nav {
   border: 4px solid black;
   display: flex;
   flex-direction: column;
-  margin-top: 1.6rem;
+  margin-top: 1rem;
   clip-path: polygon(
     5% 0,
     95% 0,
@@ -382,12 +382,12 @@ nav {
 
 .products-heading {
   display: flex;
-  font-size: 5.6rem;
+  font-size: 3.5rem;
   letter-spacing: 2px;
-  padding-left: 5.6rem;
+  padding-left: 3.5rem;
   padding-bottom: 3px;
   text-transform: uppercase;
-  height: 9.1rem;
+  height: 5.7rem;
   background-color: #d5d5d5;
   color: #3c3c3c;
   align-items: flex-end;
@@ -411,7 +411,7 @@ nav {
 }
 .cheese-photo img {
   opacity: 0.8;
-  width: 26.4rem;
+  width: 16.5rem;
   height: auto;
   transform: scale(1.15);
   transition: transform 0.5s, opacity 0.5s;
@@ -458,19 +458,19 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  transition: all 200ms ease-in-out;
+  transition: 200ms ease-in-out;
   border: 1px solid black;
   border-radius: 10px;
   z-index: 10;
   background-color: white;
   box-shadow: 0 30px 80px 10px rgba(255, 255, 255, 0.487);
   display: block;
-  max-height: calc(100vh - 3.2rem);
+  max-height: calc(100vh - 2rem);
   overflow-y: auto;
 }
 
 .modal p {
-  line-height: 2.4rem;
+  line-height: 1.5rem;
   margin-bottom: 40px;
   color: rgb(0, 0, 0);
 }
@@ -488,7 +488,7 @@ nav {
   order: 3;
 }
 .modal-header .title {
-  font-size: 2.24rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -497,7 +497,7 @@ nav {
   border: none;
   outline: none;
   background: none;
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 
@@ -511,12 +511,12 @@ nav {
   overflow-y: initial;
 }
 .modal-picture {
-  height: 40rem;
+  height: 25rem;
 }
 #overlay {
   position: fixed;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: 200ms ease-in-out;
   top: 0;
   left: 0;
   right: 0;
@@ -531,69 +531,42 @@ nav {
 }
 
 /* SECTION GALERY */
-
 .section__galery {
+  padding: 15rem 3rem;
+  border-top: 1px solid #ddd;
   display: flex;
-  position: relative;
-  height: 100vh;
-  margin-top: 1.6rem;
-  background-color: rgba(39, 38, 38, 0.713);
-  clip-path: polygon(
-    5% 0,
-    95% 0,
-    100% 5%,
-    100% 95%,
-    95% 100%,
-    5% 100%,
-    0 95%,
-    0 5%
-  );
-  font-family: "Festive", sans-serif;
-  overflow: hidden;
   transition: transform 1s, opacity 1s;
-}
-.galery_box {
-  width: 100%;
-  position: relative;
-}
-.section__header {
-  position: absolute;
-  height: 5rem;
-  top: 5rem;
-  left: 4rem;
-  font-size: 8rem;
-  line-height: 1.3;
-  font-weight: 500;
 }
 
 .slider {
-  top: 10rem;
-  width: 60rem;
-  height: 40rem;
+  max-width: 100rem;
+  height: 50rem;
   margin: 0 auto;
   position: relative;
-  display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .slide {
   position: absolute;
   top: 0;
   width: 100%;
-  /* height: 50rem; */
+  height: 50rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* THIS creates the animation! */
   transition: transform 1s;
 }
 
 .slide > img {
+  /* Only for images that have different size than slide */
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: filter 0.5s;
 }
 
-.slider_btn {
+.slider__btn {
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -608,16 +581,40 @@ nav {
   cursor: pointer;
 }
 
-.btn_left {
+.slider__btn--left {
   left: 6%;
   transform: translate(-50%, -50%);
 }
 
-.btn_right {
+.slider__btn--right {
   right: 6%;
   transform: translate(50%, -50%);
 }
 
+/* .section__galery {
+  height: 100vh;
+  background-color: white;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.797),
+      rgba(255, 255, 255, 0.756)
+    ),
+    url(blacknwhite.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  flex: none;
+  clip-path: polygon(
+    5% 0,
+    95% 0,
+    100% 5%,
+    100% 95%,
+    95% 100%,
+    5% 100%,
+    0 95%,
+    0 5%
+  );
+}
+ */
 /* SECTION WORKSHOP */
 .section__workshop {
   height: 100vh;
@@ -642,7 +639,6 @@ nav {
     0 5%
   );
 }
-
 /* SECTION FRIENDS */
 .section__friends {
   height: 100vh;
@@ -693,43 +689,3 @@ nav {
 .slideIn {
   transition: transform 1s, opacity 1s;
 }
-
-/* [IMAGE] */
-.zoomD {
-  cursor: pointer;
-}
-
-/* [LIGHTBOX BACKGROUND] */
-#lb-back {
-  position: absolute;
-  padding: 0;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: auto;
-  height: auto;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-  visibility: hidden;
-  opacity: 0;
-  transition: all ease 1s;
-}
-#lb-back.show {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* [LIGHTBOX IMAGE] */
-#lb-img {
-  position: relative;
-  top: 50%;
-}
-/* #lb-img img {
-  width: 100%;
-  height: auto;
-
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  margin: 0 auto;
-} */

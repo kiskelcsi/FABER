@@ -2,7 +2,6 @@
 <html lang="hu">
   <head>
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="/vendors/css/animate.css" /> -->
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,12 +31,14 @@
               <a onclick="scrollToSection('section3')" class="links">Galéria</a>
             </li>
             <li class="nav-item">
-              <a onclick="scrollToSection('section2')" class="links"
+              <a onclick="scrollToSection('section4')" class="links"
                 >A Műhely</a
               >
             </li>
             <li class="nav-item">
-              <a href="#">Akiket ajánlok</a>
+              <a onclick="scrollToSection('section5')" class="links"
+                >Akiket ajánlok</a
+              >
             </li>
             <li class="nav-item">
               <a href="#">Kapcsolat</a>
@@ -147,7 +148,7 @@
         <li>
           <figure class="cheese-photo tooltip">
             <img
-              data-modal-target="#cacio"
+              data-modal-target="#string"
               src="resources/img/stringcheese2-1.jpg"
               alt="string cheese"
             />
@@ -266,7 +267,6 @@
         </p>
       </div>
     </div>
-    <div id="overlay"></div>
     <div class="modal" id="trecia">
       <div class="modal-header">
         <div class="title">Trecia Scamorza</div>
@@ -275,53 +275,146 @@
       <div class="picture-container">
         <img
           class="modal-picture"
-          src="resources/img/scamorza.JPG"
-          alt="Scamorza"
+          src="resources/img/treciascamorza.jpg"
+          alt="scamorza"
         />
       </div>
       <div class="modal-body">
         <p>
-          Camorza is an Italian, spun paste cow’s milk cheese belonging to the
-          pasta filata family. Shaped similar to a provolone in pear shape, it
-          is available in many other forms as well. A semi-soft white cheese
-          with a texture comparable to that of a firm, dry Mozzarella, Scamorza
-          is made throughout Apulia and in some parts of Campania and Molise.
-          The cheese is made from pasteurised cow’s milk or from a mixture of
-          cow and sheep milk. At the end of the cheese making process, which is
-          akin to Mozzarella, the cheeses are hanged together in strings to
-          ripen for about two weeks. The process of ripening the cheese has
-          given Scamorza its name, which in southern Italy means ‘beheaded’.
+          String cheese is extremely popular, especially among children. The
+          cheese is in the form of strings. The texture is chewy, firm and
+          stringy. There are many types of string cheeses available in the
+          market ranging from smoked, unsmoked, garlic and onion versions.
         </p>
         <p>
-          After two weeks of ripening, the cheese is sold as it is or smoked.
-          The smoked variant, called ‘Scamorzi Affumicate’ is made by smoking
-          the cheese over flaming straw for around 10 to 15 minutes. A fresh
-          version of Scamorza is also sold within a few days of production. The
-          texture of Scamorza is elastic, stringy and has less moisture than
-          Mozzarella. In addition, the flavour is more piquant, milky and
-          creamy. Smoked Scamorza has a subtle, smoky flavour with a sweet,
-          light caramel note. Scamorza is used as a substitute for Mozzarella as
-          it imparts more interest in the recipe. Since Scamorza has excellent
-          melting qualities, it is best known to flavour baking dishes, for
-          griddling or topped with prosciutto for extra zest. The smoky flavour
-          of Scamorza pairs well with oak-aged Chardonnay, Pinot Girgio or
-          Orvieto.
+          A sajt olasz neve caciocavallo szó szerint "lósajtot" jelent, és
+          általában azt gondolják, hogy a név abból ered, hogy két sajtformát
+          mindig kötéllel kötnek össze, majd hagynak érlelni, ha egy "cavallo"
+          -ot, azaz átfedést tesznek vízszintes rúdra vagy ágra .[Wikipedia -
+          Enciklopédia site:hu.wikiqube.net
+        </p>
+        <p>
+          Nyilvánvalóan a caciocavallót Kr.e. 500 körül említette először
+          Hippokratészhangsúlyozva a "görögök okosságát a sajtkészítésben".[2]A
+          "caciocavallo" névhez hasonló sajtfajták az egész Balkánon és
+          Dél-Olaszországban elterjedtek. Szicíliában a Ragusano DOP-nak,
+          amelyet helyben "caciocavallo ragusano" néven ismernek, el kellett
+          dobnia a "caciocavallo" megnevezést a DOP státusz megszerzése
+          érdekében.Wikipedia - Enciklopédia site:hu.wikiqube.net
         </p>
       </div>
     </div>
+    <div class="modal" id="string">
+      <div class="modal-header">
+        <div class="title">String Cheese</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="picture-container">
+        <img
+          class="modal-picture"
+          src="resources/img/stringcheese2-1.jpg"
+          alt="String"
+        />
+      </div>
+      <div class="modal-body">
+        <p>
+          String cheese is extremely popular, especially among children. The
+          cheese is in the form of strings. The texture is chewy, firm and
+          stringy. There are many types of string cheeses available in the
+          market ranging from smoked, unsmoked, garlic and onion versions.
+        </p>
+        <p>
+          A sajt olasz neve caciocavallo szó szerint "lósajtot" jelent, és
+          általában azt gondolják, hogy a név abból ered, hogy két sajtformát
+          mindig kötéllel kötnek össze, majd hagynak érlelni, ha egy "cavallo"
+          -ot, azaz átfedést tesznek vízszintes rúdra vagy ágra .[Wikipedia -
+          Enciklopédia site:hu.wikiqube.net
+        </p>
+        <p>
+          Nyilvánvalóan a caciocavallót Kr.e. 500 körül említette először
+          Hippokratészhangsúlyozva a "görögök okosságát a sajtkészítésben".[2]A
+          "caciocavallo" névhez hasonló sajtfajták az egész Balkánon és
+          Dél-Olaszországban elterjedtek. Szicíliában a Ragusano DOP-nak,
+          amelyet helyben "caciocavallo ragusano" néven ismernek, el kellett
+          dobnia a "caciocavallo" megnevezést a DOP státusz megszerzése
+          érdekében.Wikipedia - Enciklopédia site:hu.wikiqube.net
+        </p>
+      </div>
+    </div>
+    <div class="modal" id="string">
+      <div class="modal-header">
+        <div class="title">String Cheese</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="picture-container">
+        <img
+          class="modal-picture"
+          src="resources/img/stringcheese2-1.jpg"
+          alt="String"
+        />
+      </div>
+      <div class="modal-body">
+        <p>
+          String cheese is extremely popular, especially among children. The
+          cheese is in the form of strings. The texture is chewy, firm and
+          stringy. There are many types of string cheeses available in the
+          market ranging from smoked, unsmoked, garlic and onion versions.
+        </p>
+        <p>
+          A sajt olasz neve caciocavallo szó szerint "lósajtot" jelent, és
+          általában azt gondolják, hogy a név abból ered, hogy két sajtformát
+          mindig kötéllel kötnek össze, majd hagynak érlelni, ha egy "cavallo"
+          -ot, azaz átfedést tesznek vízszintes rúdra vagy ágra .[Wikipedia -
+          Enciklopédia site:hu.wikiqube.net
+        </p>
+        <p>
+          Nyilvánvalóan a caciocavallót Kr.e. 500 körül említette először
+          Hippokratészhangsúlyozva a "görögök okosságát a sajtkészítésben".[2]A
+          "caciocavallo" névhez hasonló sajtfajták az egész Balkánon és
+          Dél-Olaszországban elterjedtek. Szicíliában a Ragusano DOP-nak,
+          amelyet helyben "caciocavallo ragusano" néven ismernek, el kellett
+          dobnia a "caciocavallo" megnevezést a DOP státusz megszerzése
+          érdekében.Wikipedia - Enciklopédia site:hu.wikiqube.net
+        </p>
+      </div>
+    </div>
+
     <div id="overlay"></div>
 
-    <section class="section__galery" id="section3"></section>
+    <section class="section__galery" id="section3">
+      <div class="galery_box slideIn" id="gallery">
+        <h2 class="section__header">Galéria</h2>
+        <div class="slider">
+          <div class="slide">
+            <img class="zoomD" src="resources/img/Galery/1.jpg" alt="1" />
+          </div>
+          <div class="slide">
+            <img class="zoomD" src="resources/img/Galery/5.jpg" alt="5" />
+          </div>
+          <div class="slide">
+            <img class="zoomD" src="resources/img/Galery/6.jpg" alt="6" />
+          </div>
+          <div class="slide">
+            <img class="zoomD" src="resources/img/Galery/8.jpg" alt="8" />
+          </div>
+          <div class="slide">
+            <img class="zoomD" src="resources/img/Galery/11.jpg" alt="11" />
+          </div>
+          <button class="slider_btn btn_left">&larr;</button>
+          <button class="slider_btn btn_right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+        <div id="lb-back">
+          <div id="lb-img"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section__workshop" id="section4"></section>
+    <section class="section__friends" id="section5"></section>
 
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="vendors/js/jquery.waypoints.min.js"></script>
   </body>
 </html>
