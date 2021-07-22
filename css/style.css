@@ -694,13 +694,14 @@ nav {
   transition: transform 1s, opacity 1s;
 }
 
-/* [IMAGE] */
+/* IMAGE */
 .zoomD {
   cursor: pointer;
 }
 
-/* [LIGHTBOX BACKGROUND] */
+/* LIGHTBOX BACKGROUND */
 #lb-back {
+  display: flex;
   position: absolute;
   padding: 0;
   top: 0;
@@ -708,28 +709,22 @@ nav {
   transform: translateX(-50%);
   width: auto;
   height: auto;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.028);
   z-index: 999;
   visibility: hidden;
   opacity: 0;
-  transition: all ease 1s;
+  transition: all ease-in-out 1s;
 }
 #lb-back.show {
+  /* display: flex; */
+  /* position: absolute; */
   visibility: visible;
   opacity: 1;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
 /* [LIGHTBOX IMAGE] */
-#lb-img {
-  position: relative;
-  top: 50%;
-}
-/* #lb-img img {
-  width: 100%;
-  height: auto;
-
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  margin: 0 auto;
+/* #lb-img {
 } */

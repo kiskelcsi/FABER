@@ -162,7 +162,7 @@ document.addEventListener("keydown", function (e) {
   e.key === "ArrowRight" && nextSlide();
   e.key === "Escape" && closePic.classList.remove("show");
 });
-// ZOOM OUT
+// ZOOM IN-OUT
 
 let zoomImg = function () {
   let clone = this.cloneNode();
