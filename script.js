@@ -30,16 +30,6 @@ let toggleNav = function () {
   }
 };
 
-// SCROLL
-function scrollToSection(e) {
-  let elmnt = document.getElementById(e);
-  elmnt.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
-  console.log(elmnt);
-}
-
 // ANIMATED BOX
 document.addEventListener("DOMContentLoaded", function (event) {
   document.addEventListener("scroll", function (event) {
@@ -128,8 +118,29 @@ function closeModal(modal) {
 const slides = document.querySelectorAll(".slide");
 const btnLeft = document.querySelector(".btn_left");
 const btnRight = document.querySelector(".btn_right");
+const dotContainer = document.querySelector(".dots");
 let curSlide = 0;
 const maxSlide = slides.length;
+const createDots = function () {
+  slides.forEach(function (_, i) {
+    dotContainer.insertAdjacentHTML(
+      "beforeend",
+      `<button class="dots__dot" data-slide="${i}"></button>`
+    );
+  });
+};
+createDots();
+
+const activateDot = function (slide) {
+  document
+    .querySelectorAll(".dots__dot")
+    .forEach((dot) => dot.classList.remove("dots__dot--active"));
+
+  document
+    .querySelector(`.dots__dot[data-slide="${slide}"]`)
+    .classList.add("dots__dot--active");
+};
+
 const goToSlide = function (slide) {
   slides.forEach(
     (s, i) => (s.style.transform = `translateX(${100 * (i - curSlide)}%)`)
@@ -143,6 +154,7 @@ const nextSlide = function () {
     curSlide++;
   }
   goToSlide(curSlide);
+  activateDot(curSlide);
 };
 const prevSlide = function () {
   if (curSlide === 0) {
@@ -151,17 +163,27 @@ const prevSlide = function () {
     curSlide--;
   }
   goToSlide(curSlide);
+  activateDot(curSlide);
 };
 
 btnRight.addEventListener("click", nextSlide);
 btnLeft.addEventListener("click", prevSlide);
 let closePic = document.getElementById("lb-back");
 document.addEventListener("keydown", function (e) {
-  console.log(e);
   if (e.key === "ArrowLeft") prevSlide();
   e.key === "ArrowRight" && nextSlide();
   e.key === "Escape" && closePic.classList.remove("show");
 });
+
+dotContainer.addEventListener("click", function (e) {
+  if (e.target.classList.contains("dots__dot")) {
+    const { slide } = e.target.dataset;
+    curSlide = slide;
+    goToSlide(curSlide);
+    activateDot(curSlide);
+  }
+});
+
 // ZOOM IN-OUT
 
 let zoomImg = function () {
@@ -185,3 +207,22 @@ window.addEventListener("load", function () {
     this.classList.remove("show");
   });
 });
+
+// SECTION FRIENDS
+
+const friendsSlide = document.querySelectorAll(".friends_col");
+
+const flexCont = function (slide) {
+  // friendsSlide.forEach((s) => (s.style.flex = "0.4"));
+  // document
+  //   .querySelectorAll(".friends_col")
+  //   .forEach((dot) => dot.classList.remove("dots__dot--active"));
+};
+
+// let idOfBox = document.addEventListener("mouseover", function (e) {
+//   const flexI = e.target.id;
+
+//   document
+//     .querySelectorAll(".friends_col")
+//     .forEach((dot) => dot.classList.add("sizemore"));
+// });
