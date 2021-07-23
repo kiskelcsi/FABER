@@ -719,10 +719,11 @@ nav {
   height: 100vh;
   background-color: white;
   background-image: linear-gradient(
-    rgba(255, 255, 255, 0.797),
-    rgba(255, 255, 255, 0.756)
-  );
-  /* background-attachment: fixed; */
+      rgba(255, 255, 255, 0.797),
+      rgba(255, 255, 255, 0.756)
+    ),
+    url(blacknwhite.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -741,6 +742,7 @@ nav {
 }
 .friends_col {
   /* display: block; */
+  border: 1px solid rgba(119, 119, 119, 0.618);
   flex-wrap: wrap;
   flex-direction: column;
   height: 100vh;
@@ -767,30 +769,90 @@ nav {
   height: 20%;
   justify-content: space-around;
   border-bottom: 0.2rem solid black;
-  flex: 0.2;
+  /* flex: 0.2; */
 }
 .friends_col h3 {
+  position: relative;
   text-align: center;
-  flex: 0.05;
+  color: black;
+  font-size: 2rem;
+  flex: 0.3;
+  top: 1rem;
 }
 
+.infobox {
+  position: relative;
+  flex: 0.5;
+  text-align: center;
+  overflow: hidden;
+}
+.infobox span {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+.cont_icon {
+  margin-top: 1rem;
+  display: flex;
+  position: relative;
+  color: black;
+  font-size: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.social {
+  display: inline-block;
+  position: relative;
+  margin: 1rem;
+  color: black;
+  font-size: 4rem;
+}
+.social:hover {
+  color: #777;
+}
+.links_soc {
+  text-decoration: none;
+  color: black;
+}
+.links_soc:hover {
+  text-decoration: none;
+  color: #777;
+}
 #col1 {
-  background-color: rgba(0, 128, 0, 0.5);
+  background-color: rgba(0, 128, 0, 0.02);
+}
+#col1:hover {
+  background-color: rgba(0, 128, 0, 0.3);
 }
 #col2 {
-  background-color: rgba(240, 255, 240, 0.5);
+  background-color: rgba(240, 255, 240, 0.05);
+}
+#col2:hover {
+  background-color: rgba(240, 255, 240, 0.3);
 }
 #col3 {
-  background-color: rgba(76, 0, 130, 0.5);
+  background-color: rgba(76, 0, 130, 0.05);
+}
+#col3:hover {
+  background-color: rgba(76, 0, 130, 0.3);
 }
 #col4 {
-  background-color: rgba(240, 128, 128, 0.5);
+  background-color: rgba(240, 128, 128, 0.05);
+}
+#col4:hover {
+  background-color: rgba(240, 128, 128, 0.3);
 }
 #col5 {
-  background-color: rgba(32, 178, 171, 0.5);
+  background-color: rgba(32, 178, 171, 0.05);
 }
 #col6 {
-  background-color: rgba(128, 0, 0, 0.5);
+  background-color: rgba(128, 0, 0, 0.05);
+}
+#col5:hover {
+  background-color: rgba(32, 178, 171, 0.3);
+}
+#col6:hover {
+  background-color: rgba(128, 0, 0, 0.3);
 }
 /* ANIMATION */
 .fade-in {
@@ -799,7 +861,7 @@ nav {
 
 @keyframes fade-in {
   0% {
-    transform: translateY(50px);
+    transform: translateY(5rem);
     opacity: 0;
   }
   100% {
