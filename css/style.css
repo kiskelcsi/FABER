@@ -92,9 +92,6 @@ body {
     transform: translateX(-10rem);
   }
 
-  80% {
-    transform: translateX(1rem);
-  }
   100% {
     opacity: 1;
     transform: translate(0);
@@ -104,9 +101,6 @@ body {
   0% {
     opacity: 0;
     transform: translateX(10rem);
-  }
-  80% {
-    transform: translateX(-1rem);
   }
   100% {
     opacity: 1;
@@ -719,11 +713,10 @@ nav {
   height: 100vh;
   background-color: white;
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.797),
-      rgba(255, 255, 255, 0.756)
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
     ),
-    url(blacknwhite.jpg);
-  background-attachment: fixed;
+    url(teritő.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -805,7 +798,7 @@ nav {
   position: relative;
   margin: 1rem;
   color: black;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .social:hover {
   color: #777;
@@ -854,6 +847,157 @@ nav {
 #col6:hover {
   background-color: rgba(128, 0, 0, 0.3);
 }
+
+/* SECTION CONTACT */
+.section__contact {
+  height: 100vh;
+  background-color: white;
+  background-image: linear-gradient(
+    to top right,
+    rgba(150, 150, 150, 0.797),
+    rgba(255, 255, 255, 0.756)
+  );
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  margin-top: 1rem;
+  clip-path: polygon(
+    5% 0,
+    95% 0,
+    100% 5%,
+    100% 95%,
+    95% 100%,
+    5% 100%,
+    0 95%,
+    0 5%
+  );
+}
+.cont_head {
+  margin-top: 2rem;
+  position: relative;
+  font-size: 4rem;
+  color: rgb(63, 63, 63);
+  height: 2rem;
+  text-align: center;
+  letter-spacing: 1rem;
+}
+.cont_head-two {
+  top: 7%;
+  position: relative;
+  font-size: 3rem;
+  color: rgb(63, 63, 63);
+  height: 2rem;
+  text-align: center;
+}
+.contact_form-box {
+  position: relative;
+  left: 50%;
+  width: 30%;
+  top: 10%;
+  transform: translateX(-50%);
+}
+.contact-form {
+  position: relative;
+}
+.line_space {
+  line-height: 2.6rem;
+}
+
+input[type="email"],
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+textarea {
+  height: 100px;
+}
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+:focus {
+  outline: 0;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 12rem;
+  background-color: #333;
+  height: 15rem;
+  padding: 40px;
+  font-size: 80%;
+}
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+.social-links {
+  list-style: none;
+  float: right;
+}
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color 0.2s;
+}
+.footer-nav li a:active,
+.footer-nav li a:hover {
+  color: #ddd;
+}
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 300%;
+}
+.facebook,
+.insta {
+  transition: color 0.2s;
+}
+.soc_icons {
+  position: relative;
+  top: -1rem;
+}
+.facebook:hover {
+  color: #1877f2;
+}
+.twitter:hover {
+  color: #1da1f2;
+}
+.google:hover {
+  color: #db4437;
+}
+.insta:hover {
+  color: #c32aa3;
+}
+footer p {
+  color: #888;
+  text-align: center;
+  margin: 30px;
+}
+.copyright {
+  margin-top: 5rem;
+  height: 3rem;
+  line-height: 3rem;
+}
+
 /* ANIMATION */
 .fade-in {
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
