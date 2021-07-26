@@ -131,17 +131,10 @@ nav {
   justify-content: space-between;
 }
 .navigation {
-  display: flexbox;
   position: absolute;
-
   max-width: 100%;
   margin-bottom: 1.6rem;
   z-index: 1000;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
 }
 
 .logo {
@@ -218,7 +211,7 @@ nav {
   border-radius: 0.8rem;
   z-index: 1000;
   transition: all 1s ease-in-out;
-  /* opacity: 0.8; */
+  max-width: 75%;
 }
 .nav-item {
   border: 0.15rem solid transparent;
@@ -235,7 +228,7 @@ nav {
 }
 /* SECTION ABOUT ME */
 .section__me {
-  height: auto;
+  height: 180vh;
   background-color: white;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.797),
@@ -270,85 +263,83 @@ nav {
 .paragraph {
   line-height: 2.9rem;
   font-size: 1.75rem;
-  margin-top: 3.2rem;
-  width: 50%;
+  margin-top: 12rem;
+  width: 45%;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 /* PARAGRAPHS */
-.first__part {
-  color: black;
-  margin-bottom: 4.8rem;
-}
-.second__part {
-  color: black;
-  margin-bottom: 4.8rem;
-}
-.third__part {
+.par_me {
   color: black;
   margin-bottom: 4.8rem;
 }
 
 /* IMAGES */
 .prof__pic {
-  margin-top: 3.2rem;
+  margin-top: 12rem;
   height: 12.8rem;
   width: 12.8rem;
 }
 
 .images-about-me {
-  width: 80vw;
+  top: -10%;
+  width: 65%;
+  height: 100%;
   position: relative;
-  flex-wrap: nowrap;
 }
 .img-aboutme-1 {
-  position: absolute;
+  position: relative;
   border: 5px solid white;
-  top: 5%;
-  left: 3%;
-  width: 32rem;
+  top: 50%;
+  left: 50%;
+  width: 45%;
+  transform: translate(-103%, -236%);
 }
 .img-aboutme-2 {
-  position: absolute;
-  top: 2%;
-  left: 46%;
-  width: 36rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 45%;
   border: 5px solid white;
+  transform: translate(-105%, -184%);
 }
 .img-aboutme-3 {
-  position: absolute;
-  top: 25%;
-  left: 45%;
-
-  width: 40rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-4%, -210%);
 }
 .img-aboutme-4 {
-  position: absolute;
-  top: 24%;
-  left: 5%;
-  width: 30.5rem;
-  align-self: flex-start;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 47%;
+  transform: translate(-112%, -52%);
 }
 .img-aboutme-5 {
-  position: absolute;
-  top: 53%;
-  width: 41rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 48%;
+  transform: translate(-103%, -230%);
   border: 5px solid white;
-  align-self: flex-start;
 }
 .img-aboutme-6 {
-  position: absolute;
-  top: 76%;
-  left: 54%;
-  width: 27.2rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 49%;
   border: 5px solid white;
-  align-self: flex-start;
+  transform: translate(-203%, -197.5%);
 }
 .img-aboutme-7 {
-  position: absolute;
-  top: 53%;
-  left: 54%;
-  width: 23rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 31%;
   border: 5px solid white;
-  align-self: flex-start;
+  transform: translate(-55%, -240%);
 }
 
 /* SECTION PRODUCTS */
@@ -1044,3 +1035,60 @@ footer p {
   height: 100%;
   justify-content: center;
 }
+
+/* .images-about-me {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  flex-wrap: wrap;
+}
+.img-aboutme-1 {
+  position: absolute;
+  border: 5px solid white;
+  top: 5%;
+  left: 3%;
+  width: 45%;
+}
+.img-aboutme-2 {
+  position: absolute;
+  top: 2%;
+  left: 48%;
+  width: 45%;
+  border: 5px solid white;
+}
+.img-aboutme-3 {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  width: 54%;
+}
+.img-aboutme-4 {
+  position: absolute;
+  top: 24%;
+  left: 5%;
+  width: 41%;
+  align-self: flex-start;
+}
+.img-aboutme-5 {
+  position: absolute;
+  top: 53%;
+  width: 54%;
+  border: 5px solid white;
+  align-self: flex-start;
+}
+.img-aboutme-6 {
+  position: absolute;
+  top: 76.5%;
+  left: 54%;
+  width: 36%;
+  border: 5px solid white;
+  align-self: flex-start;
+}
+.img-aboutme-7 {
+  position: absolute;
+  top: 53%;
+  left: 54%;
+  width: 31%;
+  border: 5px solid white;
+  align-self: flex-start;
+} */
