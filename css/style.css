@@ -500,6 +500,7 @@ nav {
   height: 40rem;
 }
 #overlay {
+  max-width: 100vw;
   position: fixed;
   opacity: 0;
   transition: all 200ms ease-in-out;

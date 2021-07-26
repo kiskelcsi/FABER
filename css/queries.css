@@ -180,16 +180,10 @@
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
   .heading-primary-main {
-    background-size: cover;
-
-    background-position: center;
-
     font-size: 3rem;
     font-weight: 300;
     letter-spacing: 3rem;
-    animation: moveInLeft 2s ease-out;
   }
-
   nav {
     position: relative;
     display: flex;
@@ -294,29 +288,69 @@
     left: 27%;
     top: 53.5rem;
   }
+  .section__friends {
+    align-items: center;
+    justify-items: center;
+    max-width: 100vw;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .harom {
+    width: 45.9vw;
+  }
+  .friends_col {
+    height: 50vh;
+  }
 
-  /* Small phones: from 0 to 480px */
-  @media only screen and (max-width: 480px) {
-    .heading-primary-main {
-      background-size: cover;
+  .friends_info {
+    display: none;
+  }
+  .infobox {
+    font-size: 50%;
+  }
+}
 
-      background-position: center;
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  .heading-primary-main {
+    background-size: auto;
 
-      font-size: 3rem;
-      font-weight: 300;
-      letter-spacing: 3rem;
-      animation: moveInLeft 2s ease-out;
-    }
-    .heading-primary-sub {
-      display: block;
-      font-size: 1rem;
-      font-weight: 300;
-      letter-spacing: 1rem;
-      animation: moveInRight 2s ease-out;
-    }
+    background-position: center;
 
-    .contact-form {
-      width: 100%;
-    }
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2rem;
+    animation: moveInLeft 2s ease-out;
+  }
+  .heading-primary-sub {
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1rem;
+    animation: moveInRight 2s ease-out;
+  }
+  .section__friends {
+    align-items: center;
+    justify-items: center;
+    max-width: 100vw;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .harom {
+    width: 45.9vw;
+  }
+  .friends_col {
+    height: 50vh;
+  }
+
+  .friends_info {
+    display: none;
+  }
+  .infobox {
+    font-size: 50%;
+  }
+
+  .contact-form {
+    width: 100%;
   }
 }
