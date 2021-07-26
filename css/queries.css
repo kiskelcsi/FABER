@@ -179,6 +179,17 @@
 
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
+  .heading-primary-main {
+    background-size: cover;
+
+    background-position: center;
+
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 3rem;
+    animation: moveInLeft 2s ease-out;
+  }
+
   nav {
     position: relative;
     display: flex;
@@ -287,9 +298,13 @@
   /* Small phones: from 0 to 480px */
   @media only screen and (max-width: 480px) {
     .heading-primary-main {
+      background-size: cover;
+
+      background-position: center;
+
       font-size: 3rem;
       font-weight: 300;
-      letter-spacing: 3.5rem;
+      letter-spacing: 3rem;
       animation: moveInLeft 2s ease-out;
     }
     .heading-primary-sub {
