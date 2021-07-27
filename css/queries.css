@@ -393,3 +393,28 @@
     width: 100%;
   }
 }
+@media only screen and (min-width: 200px) and (max-width: 414px) and (orientation: portrait) {
+  .header {
+    display: flexbox;
+    height: 96vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(faber-main-3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .heading-primary-main {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2rem;
+    animation: moveInLeft 2s ease-out;
+  }
+  .heading-primary-sub {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 0.8rem;
+    animation: moveInRight 2s ease-out;
+  }
+}
