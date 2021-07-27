@@ -368,15 +368,15 @@ nav {
 .products-heading {
   display: flex;
   font-size: 5.6rem;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
   padding-left: 5.6rem;
-  padding-bottom: 3px;
+  padding-bottom: 0.3rem;
   text-transform: uppercase;
   height: 9.1rem;
   background-color: #d5d5d5;
   color: #3c3c3c;
   align-items: flex-end;
-  border-bottom: 4px solid black;
+  border-bottom: 0.4rem solid black;
 }
 
 .cheese-showcase {
@@ -419,11 +419,11 @@ nav {
 .tooltip .tooltiptext {
   visibility: hidden;
   bottom: 0;
-  width: 120px;
+  width: 12rem;
   color: rgb(16, 15, 15);
   text-align: center;
-  border-radius: 6px;
-  padding: 2px 0;
+  border-radius: 0.6rem;
+  padding: 0.2rem 0;
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
@@ -445,10 +445,10 @@ nav {
   transform: translate(-50%, -50%) scale(0);
   transition: all 200ms ease-in-out;
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 1rem;
   z-index: 10;
   background-color: white;
-  box-shadow: 0 30px 80px 10px rgba(255, 255, 255, 0.487);
+  box-shadow: 0 3rem 8rem 1rem rgba(255, 255, 255, 0.487);
   display: block;
   max-height: calc(100vh - 3.2rem);
   overflow-y: auto;
@@ -457,7 +457,7 @@ nav {
 
 .modal p {
   line-height: 2.4rem;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
   color: rgb(0, 0, 0);
 }
 .modal.active {
@@ -465,7 +465,7 @@ nav {
 }
 
 .modal-header {
-  padding: 10px 15px;
+  padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -488,7 +488,7 @@ nav {
 }
 
 .modal-body {
-  padding: 10px 15px;
+  padding: 1rem 1.5rem;
   order: 2;
   width: auto;
   display: flex;
@@ -567,7 +567,6 @@ nav {
   position: absolute;
   top: 0;
   width: 100%;
-  /* height: 50rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -664,9 +663,7 @@ nav {
   );
 }
 .column {
-  /* height: 25%; */
   flex-basis: 50%;
-  /* width: 50%; */
   border: 2px solid black;
 }
 .column h2 {
@@ -725,7 +722,6 @@ nav {
   );
 }
 .friends_col {
-  /* display: block; */
   border: 1px solid rgba(119, 119, 119, 0.618);
   flex-wrap: wrap;
   flex-direction: column;
@@ -734,8 +730,6 @@ nav {
   flex: 0.2;
   transition: all 1s ease-in-out;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 .friends_col:hover {
   flex: 0.4;
@@ -975,10 +969,7 @@ footer {
 footer p {
   color: #888;
   text-align: center;
-  margin: 30px;
-}
-.copyright {
-  margin-top: 5rem;
+  margin: 3.5rem;
   height: 3rem;
   line-height: 3rem;
 }

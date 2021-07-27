@@ -1,5 +1,5 @@
 "use strict";
-// NAV WHITE
+// NAV
 let toggleNavStatus = false;
 
 let toggleNav = function () {
