@@ -4,40 +4,6 @@
     max-width: 97%;
   }
 
-  .section__products {
-    display: flex;
-    height: 100%;
-    width: 97vw;
-    overflow: hidden;
-  }
-
-  .cheese-photo {
-    width: 23rem;
-    height: 23rem;
-    margin: 0;
-    overflow: hidden;
-  }
-  .cheese-showcase {
-    list-style: none;
-    width: 100%;
-  }
-  .cheese-showcase li {
-    width: 20%;
-    border: 1px solid black;
-    overflow: hidden;
-  }
-  .cheese-photo img {
-    opacity: 0.8;
-    transform: scale(1.15);
-    transition: transform 0.5s, opacity 0.5s;
-    justify-content: center;
-    animation: fadeIn 5s;
-  }
-  .cheese-photo img:hover {
-    opacity: 1;
-    transform: scale(1.02);
-    cursor: pointer;
-  }
   .paragraph {
     line-height: 2.7rem;
     font-size: 1.75rem;
@@ -159,40 +125,14 @@
     position: relative;
     width: 40%;
   }
-
-  .section__products {
-    display: flex;
-    height: 100%;
-    width: 97vw;
-    overflow: hidden;
+  .products-heading {
+    font-size: 4.5rem;
   }
 
-  .cheese-photo {
-    width: 23rem;
-    height: 23rem;
-    margin: 0;
-    overflow: hidden;
-  }
-  .cheese-showcase {
-    list-style: none;
-    width: 100%;
-  }
-  .cheese-showcase li {
-    width: 25%;
-    border: 1px solid black;
-    overflow: hidden;
-  }
-  .cheese-photo img {
-    transform: scale(1.15);
-  }
-  .cheese-photo img:hover {
-    opacity: 1;
-    transform: scale(1.02);
-  }
   .slider {
-    height: 90%;
-    width: 60%;
-    top: 30%;
+    height: 100%;
+    width: 70%;
+    top: 23%;
   }
   .dots {
     bottom: 35%;
@@ -205,6 +145,12 @@
   .btn_right {
     right: 8%;
     transform: translate(50%, -200%);
+  }
+  #lb-back {
+    display: none;
+  }
+  #lb-back.show {
+    display: none;
   }
 
   .section__friends {
@@ -334,6 +280,14 @@
     left: 27%;
     top: 53.5rem;
   }
+  .cheese-showcase div {
+    width: 50%;
+    height: auto;
+  }
+  .section__products h2 {
+    font-size: 3.5rem;
+  }
+
   .section__header {
     top: 2rem;
     left: 50%;
@@ -341,9 +295,9 @@
   }
 
   .slider {
-    height: 110%;
-    width: 80%;
-    top: 25%;
+    height: 130%;
+    width: 100%;
+    top: 22%;
   }
   .dots {
     bottom: 50%;
@@ -361,11 +315,17 @@
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
+  .header {
+    display: flexbox;
+    height: 96vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(faber-main-3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
   .heading-primary-main {
-    background-size: auto;
-
-    background-position: center;
-
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 2rem;
@@ -373,10 +333,60 @@
   }
   .heading-primary-sub {
     display: block;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 300;
-    letter-spacing: 1rem;
+    letter-spacing: 0.8rem;
     animation: moveInRight 2s ease-out;
+  }
+  /* .section__products {
+    display: flex;
+    width: 94vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .products-heading {
+    font-size: 100%;
+  }
+  .cheese-photo {
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+    overflow: hidden;
+  }
+  .cheese-showcase {
+    position: relative;
+
+    flex-basis: 40%;
+  }
+
+  .cheese-showcase li {
+    overflow: hidden;
+  } */
+  /*
+  .cheese-photo img {
+    transform: scale(1.15);
+  }
+  .cheese-photo img:hover {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+ */
+  .slider {
+    height: 130%;
+    width: 100%;
+    top: 30%;
+  }
+  .dots {
+    bottom: 70%;
+  }
+  .btn_left {
+    left: 8%;
+    top: 34%;
+  }
+
+  .btn_right {
+    right: 8%;
+    top: 34%;
   }
 
   .contact-form {

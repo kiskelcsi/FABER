@@ -28,7 +28,7 @@ body {
   height: 96vh;
   max-width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(faber-main.JPG);
+    url(faber-main-2.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -344,14 +344,12 @@ nav {
 
 /* SECTION PRODUCTS */
 .section__products {
-  height: 100vh;
-  background-color: #262626;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  border: 4px solid black;
   display: flex;
-  flex-direction: column;
+  display: block;
+
+  height: 100%;
+  background-color: #262626;
+  border: 4px solid black;
   margin-top: 1.6rem;
   clip-path: polygon(
     5% 0,
@@ -366,41 +364,40 @@ nav {
 }
 
 .products-heading {
-  display: flex;
   font-size: 5.6rem;
   letter-spacing: 0.2rem;
   padding-left: 5.6rem;
   padding-bottom: 0.3rem;
   text-transform: uppercase;
   height: 9.1rem;
+  width: 100%;
   background-color: #d5d5d5;
   color: #3c3c3c;
-  align-items: flex-end;
   border-bottom: 0.4rem solid black;
 }
 
 .cheese-showcase {
   display: flex;
-  list-style: none;
-  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  left: 0;
 }
-.cheese-showcase li {
-  width: 25%;
+.cheese-showcase div {
+  position: relative;
+  width: 20%;
+  height: 50%;
   border: 1px solid black;
 }
 
 .cheese-photo {
-  width: 100%;
   margin: 0;
   overflow: hidden;
 }
 .cheese-photo img {
   opacity: 0.8;
-  width: 26.4rem;
-  height: auto;
+  width: 100%;
   transform: scale(1.15);
   transition: transform 0.5s, opacity 0.5s;
-  justify-content: center;
   animation: fadeIn 5s;
 }
 .cheese-photo img:hover {
@@ -847,7 +844,6 @@ nav {
   background-position: center;
   display: flex;
   flex-direction: column;
-  /* align-content: center; */
   margin-top: 1rem;
   clip-path: polygon(
     5% 0,
