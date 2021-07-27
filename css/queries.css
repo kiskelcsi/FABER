@@ -394,6 +394,10 @@
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 414px) and (orientation: portrait) {
+  body {
+    width: 100vw;
+    scroll-behavior: smooth;
+  }
   .header {
     display: flexbox;
     height: 96vh;
