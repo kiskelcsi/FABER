@@ -30,14 +30,8 @@
 
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
-  .header {
-    background-size: 100% 100%;
-    background-position: center;
-  }
-
   nav {
     position: relative;
-    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -121,23 +115,29 @@
   .products-heading {
     font-size: 4.5rem;
   }
-
+  .section__galery {
+    height: 100vh;
+    background-color: black;
+  }
+  .section__header {
+    display: none;
+  }
   .slider {
     height: 100%;
-    width: 70%;
-    top: 23%;
+    width: 89%;
+    top: 0%;
   }
   .dots {
-    bottom: 35%;
+    bottom: 10%;
   }
   .btn_left {
-    left: 8%;
-    transform: translate(-50%, -200%);
+    left: 4%;
+    transform: translate(-50%, -50%);
   }
 
   .btn_right {
-    right: 8%;
-    transform: translate(50%, -200%);
+    right: 4%;
+    transform: translate(50%, -50%);
   }
   #lb-back {
     display: none;
@@ -286,6 +286,9 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  .section__header {
+    display: flex;
+  }
 
   .slider {
     height: 130%;
@@ -329,6 +332,8 @@
     font-size: 1.4rem;
     font-weight: 300;
     letter-spacing: 0.8rem;
+    transform: translateX(-1.5%);
+
     animation: moveInRight 2s ease-out;
   }
   .slider {
@@ -351,36 +356,5 @@
 
   .contact-form {
     width: 100%;
-  }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-  body {
-    width: 100vw;
-  }
-  .header {
-    display: flexbox;
-    height: 96vh;
-    width: 100vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(faber-main-3-min.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-
-  .heading-primary-main {
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: 2rem;
-    animation: moveInLeft 2s ease-out;
-  }
-  .heading-primary-sub {
-    display: block;
-    font-size: 1.4rem;
-    font-weight: 300;
-    letter-spacing: 0.8rem;
-    animation: moveInRight 2s ease-out;
-  }
-  .dots__dot {
-    color: rgb(255, 255, 255);
   }
 }
