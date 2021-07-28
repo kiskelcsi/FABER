@@ -28,8 +28,7 @@
   }
 }
 
-/* Small tablet to big tablet: from 768px to 1023px */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 992px) {
   nav {
     position: relative;
     display: flex;
@@ -50,6 +49,7 @@
   .header {
     height: 94vh;
     max-width: 100%;
+    background-attachment: scroll;
   }
 
   .heading-primary-main {
@@ -64,6 +64,9 @@
     font-weight: 300;
     letter-spacing: 1rem;
     animation: moveInRight 2s ease-out;
+  }
+  .section__me {
+    background-attachment: scroll;
   }
   .paragraph {
     line-height: 2.5rem;
@@ -176,8 +179,7 @@
   }
 }
 
-/* Small phones to small tablets: from 481px to 767px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .heading-primary-main {
     font-size: 3rem;
     font-weight: 300;
@@ -189,7 +191,8 @@
   .logo {
     position: relative;
     top: 2rem;
-    height: 9.5rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .header {
@@ -309,8 +312,7 @@
   }
 }
 
-/* Small phones: from 0 to 480px */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 576px) {
   .header {
     display: flexbox;
     height: 96vh;
