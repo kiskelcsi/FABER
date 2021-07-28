@@ -46,16 +46,8 @@
   .nav-sidebar ul {
     flex-direction: column;
   }
-  .header::before {
-    height: 94vh;
-    max-width: 100%;
-    content: "";
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(faber-main-2-min.png);
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
+  .header {
+    background-attachment: initial;
   }
 
   .heading-primary-main {
