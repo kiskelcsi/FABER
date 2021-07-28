@@ -46,10 +46,17 @@
   .nav-sidebar ul {
     flex-direction: column;
   }
-  .header {
+  .header::before {
     height: 94vh;
     max-width: 100%;
-    background-attachment: scroll;
+    content: "";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(faber-main-2-min.png);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
   }
 
   .heading-primary-main {
@@ -313,7 +320,7 @@
 }
 
 @media only screen and (max-width: 576px) {
-  .header {
+  /* .header {
     display: flexbox;
     height: 96vh;
     width: 100vw;
@@ -322,7 +329,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
-
+ */
   .heading-primary-main {
     font-size: 2rem;
     font-weight: 300;
