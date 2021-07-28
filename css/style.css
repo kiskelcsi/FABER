@@ -485,14 +485,15 @@ nav {
 .modal-body {
   padding: 1rem 1.5rem;
   order: 2;
-  width: auto;
+  width: 70vw;
   display: flex;
   flex-direction: column;
   flex: 1;
   overflow-y: initial;
 }
 .modal-picture {
-  height: 40rem;
+  max-height: 30vh;
+  max-width: 80vw;
 }
 #overlay {
   width: 100vw;
@@ -576,7 +577,6 @@ nav {
 
 .slider_btn {
   position: absolute;
-  top: 50%;
   z-index: 10;
   border: none;
   background: rgba(255, 255, 255, 0.323);
@@ -590,13 +590,15 @@ nav {
 }
 
 .btn_left {
+  top: 50%;
   left: 6%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
 }
 
 .btn_right {
+  top: 50%;
   right: 6%;
-  transform: translate(50%, -50%);
+  transform: translateY(-50%);
 }
 /* DOTS */
 .dots {
