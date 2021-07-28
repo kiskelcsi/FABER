@@ -35,6 +35,9 @@
 }
 
 @media only screen and (max-width: 992px) {
+  body {
+    padding: 0;
+  }
   nav {
     position: relative;
     display: flex;
@@ -134,9 +137,7 @@
     width: 89%;
     top: 0%;
   }
-  .grabbing {
-    cursor: grabbing;
-  }
+
   .dots {
     bottom: 5%;
   }
