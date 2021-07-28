@@ -53,11 +53,6 @@
   .nav-sidebar ul {
     flex-direction: column;
   }
-  .logo {
-    position: relative;
-    top: 2rem;
-    height: 9.5rem;
-  }
   .header {
     height: 94vh;
     max-width: 100%;
@@ -81,8 +76,6 @@
     font-size: 1.75rem;
     margin-top: 12rem;
     width: 40%;
-    margin-right: 2rem;
-    margin-left: 2rem;
   }
 
   .images-about-me {
@@ -338,39 +331,6 @@
     letter-spacing: 0.8rem;
     animation: moveInRight 2s ease-out;
   }
-  /* .section__products {
-    display: flex;
-    width: 94vw;
-    height: 100vh;
-    flex-direction: column;
-  }
-  .products-heading {
-    font-size: 100%;
-  }
-  .cheese-photo {
-    width: 10rem;
-    height: 10rem;
-    margin: 0;
-    overflow: hidden;
-  }
-  .cheese-showcase {
-    position: relative;
-
-    flex-basis: 40%;
-  }
-
-  .cheese-showcase li {
-    overflow: hidden;
-  } */
-  /*
-  .cheese-photo img {
-    transform: scale(1.15);
-  }
-  .cheese-photo img:hover {
-    opacity: 1;
-    transform: scale(1.02);
-  }
- */
   .slider {
     height: 130%;
     width: 100%;
@@ -396,7 +356,6 @@
 @media only screen and (min-width: 200px) and (max-width: 414px) and (orientation: portrait) {
   body {
     width: 100vw;
-    scroll-behavior: smooth;
   }
   .header {
     display: flexbox;
@@ -420,5 +379,8 @@
     font-weight: 300;
     letter-spacing: 0.8rem;
     animation: moveInRight 2s ease-out;
+  }
+  .dots__dot {
+    color: rgb(255, 255, 255);
   }
 }

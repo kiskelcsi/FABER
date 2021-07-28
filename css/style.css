@@ -21,10 +21,16 @@ body {
   padding: 1rem 1rem 1rem 1rem;
   background-color: black;
 }
+.logo {
+  display: flex;
+  position: relative;
+  height: 9.5rem;
+  left: 5%;
+}
 
 .header {
   display: flexbox;
-  height: 96vh;
+  height: 97vh;
   max-width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(faber-main-2.jpg);
@@ -136,10 +142,6 @@ nav {
   z-index: 1000;
 }
 
-.logo {
-  height: 9.5rem;
-}
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -151,11 +153,6 @@ nav {
   padding: 1.6rem 2.5rem;
   text-decoration: none;
   color: white;
-}
-
-.logo img {
-  width: 28rem;
-  vertical-align: middle;
 }
 
 .menu-icon {
@@ -619,9 +616,6 @@ nav {
   margin-right: 1.75rem;
   cursor: pointer;
   transition: all 0.5s;
-
-  /* Only necessary when overlying images */
-  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
 }
 
 .dots__dot:last-child {
