@@ -313,7 +313,7 @@
     height: 96vh;
     width: 100vw;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(faber-main-3.jpg);
+      url(faber-main-3-min.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
@@ -353,7 +353,7 @@
     width: 100%;
   }
 }
-@media only screen and (min-width: 200px) and (max-width: 414px) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   body {
     width: 100vw;
   }
@@ -362,7 +362,7 @@
     height: 96vh;
     width: 100vw;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(faber-main-3.jpg);
+      url(faber-main-3-min.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }

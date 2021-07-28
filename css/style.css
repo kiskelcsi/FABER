@@ -33,7 +33,7 @@ body {
   height: 97vh;
   max-width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(faber-main-2.jpg);
+    url(faber-main-2-min.png);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -230,7 +230,7 @@ nav {
       rgba(255, 255, 255, 0.797),
       rgba(255, 255, 255, 0.756)
     ),
-    url(blacknwhite.jpg);
+    url(blacknwhite-min.png);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -638,7 +638,7 @@ nav {
       rgba(255, 255, 255, 0.797),
       rgba(255, 255, 255, 0.756)
     ),
-    url(blacknwhite.jpg);
+    url(blacknwhite-min.png);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -696,7 +696,7 @@ nav {
       rgba(255, 255, 255, 0.6),
       rgba(255, 255, 255, 0.6)
     ),
-    url(teritő.jpg);
+    url(teritő-min.png);
   background-size: cover;
   background-position: center;
   display: flex;
