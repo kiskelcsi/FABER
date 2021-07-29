@@ -23,11 +23,6 @@
   .img_resp {
     width: 50%;
   }
-  .img-aboutme {
-    max-width: 100%;
-    height: 100%;
-  }
-
   .modal.active {
     max-width: 100vw;
   }
