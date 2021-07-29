@@ -248,21 +248,26 @@ nav {
     0 5%
   );
 }
-
+.prof__pic {
+  width: 10vw;
+}
 .profile__me {
-  height: 12.8rem;
+  margin-top: 16rem;
+  width: 100%;
   border-radius: 50%;
 }
+
 .strong_word {
   font-size: 2.4rem;
 }
 .paragraph {
+  position: relative;
+  top: 16rem;
   line-height: 2.9rem;
   font-size: 1.75rem;
-  margin-top: 12rem;
-  width: 45%;
-  margin-right: 2rem;
-  margin-left: 2rem;
+  width: 38vw;
+  margin-right: 1%;
+  margin-left: 1%;
 }
 /* PARAGRAPHS */
 .par_me {
@@ -271,81 +276,34 @@ nav {
 }
 
 /* IMAGES */
-.prof__pic {
-  margin-top: 12rem;
-  height: 12.8rem;
-  width: 12.8rem;
-}
 
 .images-about-me {
-  top: -10%;
-  width: 65%;
+  display: flex;
+  max-width: 40vw;
+  height: 160vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.img_resp {
+  position: relative;
+  top: 16rem;
+  max-width: 54%;
+  height: fit-content;
+  border: 3px solid white;
+}
+.img-aboutme {
+  max-width: 100%;
   height: 100%;
-  position: relative;
-}
-.img-aboutme-1 {
-  position: relative;
-  border: 5px solid white;
-  top: 50%;
-  left: 50%;
-  width: 45%;
-  transform: translate(-103%, -236%);
-}
-.img-aboutme-2 {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 45%;
-  border: 5px solid white;
-  transform: translate(-105%, -184%);
-}
-.img-aboutme-3 {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 50%;
-  transform: translate(-4%, -210%);
-}
-.img-aboutme-4 {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 47%;
-  transform: translate(-112%, -52%);
-}
-.img-aboutme-5 {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 48%;
-  transform: translate(-103%, -230%);
-  border: 5px solid white;
-}
-.img-aboutme-6 {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 49%;
-  border: 5px solid white;
-  transform: translate(-203%, -197.5%);
-}
-.img-aboutme-7 {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 31%;
-  border: 5px solid white;
-  transform: translate(-55%, -240%);
+  overflow: hidden;
+  object-fit: contain;
 }
 
 /* SECTION PRODUCTS */
 .section__products {
-  display: flex;
   display: block;
 
   height: 100%;
   background-color: #262626;
-  border: 4px solid black;
   margin-top: 1.6rem;
   clip-path: polygon(
     5% 0,

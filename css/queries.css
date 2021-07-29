@@ -3,12 +3,31 @@
   .nav-sidebar {
     max-width: 97%;
   }
-
-  .paragraph {
-    line-height: 2.7rem;
-    font-size: 1.75rem;
-    width: 60%;
+  .prof__pic {
+    width: 13vw;
+    height: 13vw;
   }
+  /* .profile__me {
+    margin-top: 2rem;
+  } */
+  .paragraph {
+    position: relative;
+    top: 15rem;
+    width: 45%;
+  }
+  .images-about-me {
+    position: relative;
+    max-width: 57vw;
+    margin-right: 2%;
+  }
+  .img_resp {
+    width: 50%;
+  }
+  .img-aboutme {
+    max-width: 100%;
+    height: 100%;
+  }
+
   .modal.active {
     max-width: 100vw;
   }
@@ -17,15 +36,6 @@
     width: 45%;
     top: 20%;
   }
-  /* .btn_left {
-    left: 8%;
-    transform: translate(-50%, -150%);
-  }
-
-  .btn_right {
-    right: 8%;
-    transform: translate(50%, -150%);
-  } */
   .dots {
     bottom: 15%;
   }
@@ -56,6 +66,7 @@
     flex-direction: column;
   }
   .header {
+    margin-top: 1.2rem;
     background-attachment: initial;
   }
 
@@ -73,55 +84,51 @@
     animation: moveInRight 2s ease-out;
   }
   .section__me {
+    display: block;
     background-attachment: scroll;
+    height: 220vh;
   }
+  .profile__me {
+    margin: 0;
+  }
+  .prof__pic {
+    position: relative;
+    margin: 0;
+    left: 50%;
+    width: 13vw;
+    height: 13vw;
+    transform: translateX(-50%);
+  }
+
   .paragraph {
+    margin: auto;
     line-height: 2.5rem;
     font-size: 1.75rem;
-    margin-top: 12rem;
-    width: 40%;
+    width: 90%;
   }
-
+  .par_me {
+    top: 10rem;
+    flex: 0.5;
+  }
   .images-about-me {
-    display: block;
-    flex-direction: column;
-    width: 40%;
+    flex-direction: row;
+    position: relative;
+    max-width: 100vw;
+    margin: 0;
+    align-content: center;
+    top: -10%;
+    justify-content: center;
+  }
+  .img_resp:nth-child(2) {
+    margin-top: 10.237%;
+  }
+  .img-aboutme {
+    margin-bottom: -4px;
+  }
+  .img_resp {
+    width: 32%;
   }
 
-  .img-aboutme-1 {
-    top: 42%;
-    left: 90%;
-    width: 65%;
-  }
-  .img-aboutme-2 {
-    width: 65%;
-    left: 91.5%;
-    top: 39%;
-  }
-  .img-aboutme-3 {
-    width: 65%;
-    top: 36.2%;
-    left: 25%;
-  }
-  .img-aboutme-4 {
-    position: relative;
-    width: 40%;
-    top: 70%;
-  }
-  .img-aboutme-5 {
-    position: relative;
-    width: 65%;
-    top: 11%;
-    left: 89.5%;
-  }
-  .img-aboutme-6 {
-    position: relative;
-    width: 70%;
-  }
-  .img-aboutme-7 {
-    position: relative;
-    width: 40%;
-  }
   .products-heading {
     font-size: 4.5rem;
   }
@@ -141,20 +148,14 @@
   .dots {
     bottom: 5%;
   }
-  /* .btn_left {
-    left: 4%;
-    transform: translate(-50%, -50%);
-  }
-
-  .btn_right {
-    right: 4%;
-    transform: translate(50%, -50%);
-  } */
   #lb-back {
     display: none;
   }
   #lb-back.show {
     display: none;
+  }
+  .section__workshop {
+    height: 150vh;
   }
 
   .section__friends {
@@ -163,12 +164,8 @@
     height: auto;
     flex-wrap: wrap;
   }
-  .section__workshop {
-    height: 150vh;
-  }
   .friends_col {
     flex-basis: 50%;
-
     height: 50vh;
   }
   .friends_col:hover {
@@ -183,7 +180,7 @@
     font-size: 50%;
   }
   .contact-form {
-    width: 80%;
+    width: 60%;
   }
 }
 
@@ -218,66 +215,47 @@
   }
   .section__me {
     display: block;
-    flex-direction: column;
-    height: 250vh;
+    background-attachment: scroll;
+    height: 220vh;
   }
-
   .prof__pic {
     position: relative;
-    top: 3rem;
-    left: 40%;
-    height: 8rem;
-    width: 8rem;
-  }
-  .paragraph {
-    position: relative;
-    line-height: 2rem;
-    font-size: 1.75rem;
-    top: 7rem;
-    width: 100%;
-  }
-  .first__part {
-    margin-bottom: 2rem;
-  }
-  .second__part {
-    margin-bottom: 2rem;
-  }
-  .third__part {
-    margin-bottom: 2rem;
-  }
-  .images-about-me {
-    display: flex;
-    width: 100vw;
-    top: 7rem;
-    position: relative;
+    width: 25vw;
+    height: 25vw;
   }
 
-  .img-aboutme-1 {
-    top: 1rem;
+  .profile__me {
+    margin: 0;
   }
-  .img-aboutme-2 {
-    top: 1rem;
-    left: 47%;
+  .images-about-me {
+    flex-direction: row;
+    position: relative;
+    max-width: 100vw;
+    margin: 0;
+    align-content: center;
+    top: -10%;
+    justify-content: center;
   }
-  .img-aboutme-3 {
-    left: 47%;
-    top: 16rem;
+
+  .paragraph {
+    /* top: 23rem; */
+    line-height: 2.5rem;
+    font-size: 1.75rem;
   }
-  .img-aboutme-4 {
-    top: 14rem;
-    left: 1rem;
+  .images-about-me {
+    flex-direction: row;
+    position: relative;
+    max-width: 100vw;
+    margin: 0;
+    align-content: center;
+    top: -20%;
+    justify-content: center;
   }
-  .img-aboutme-5 {
-    top: 31rem;
-    left: 47%;
+  .img-aboutme {
+    margin-bottom: -4px;
   }
-  .img-aboutme-6 {
-    top: 36.5rem;
-    left: 1rem;
-  }
-  .img-aboutme-7 {
-    left: 27%;
-    top: 53.5rem;
+  .img_resp {
+    width: 32%;
   }
   .cheese-showcase div {
     width: 50%;
@@ -304,15 +282,6 @@
   .dots {
     bottom: 50%;
   }
-  /* .btn_left {
-    left: 8%;
-    transform: translate(-50%, -300%);
-  }
-
-  .btn_right {
-    right: 8%;
-    transform: translate(50%, -300%);
-  } */
 }
 
 @media only screen and (max-width: 576px) {
@@ -331,6 +300,7 @@
 
     animation: moveInRight 2s ease-out;
   }
+
   .slider {
     height: 130%;
     width: 100%;
@@ -339,15 +309,6 @@
   .dots {
     bottom: 70%;
   }
-  /* .btn_left {
-    left: 8%;
-    top: 34%;
-  }
-
-  .btn_right {
-    right: 8%;
-    top: 34%;
-  } */
 
   .contact-form {
     width: 100%;
