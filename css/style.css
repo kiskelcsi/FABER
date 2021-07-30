@@ -913,12 +913,18 @@ footer {
 .insta:hover {
   color: #c32aa3;
 }
-footer p {
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #888;
-  text-align: center;
-  margin: 3.5rem;
-  height: 3rem;
-  line-height: 3rem;
+  margin-top: 5rem;
+}
+.fabche {
+  position: relative;
+}
+.signo {
+  position: relative;
 }
 
 /* ANIMATION */
@@ -974,60 +980,3 @@ footer p {
   height: 100%;
   justify-content: center;
 }
-
-/* .images-about-me {
-  width: 80%;
-  height: 100%;
-  position: relative;
-  flex-wrap: wrap;
-}
-.img-aboutme-1 {
-  position: absolute;
-  border: 5px solid white;
-  top: 5%;
-  left: 3%;
-  width: 45%;
-}
-.img-aboutme-2 {
-  position: absolute;
-  top: 2%;
-  left: 48%;
-  width: 45%;
-  border: 5px solid white;
-}
-.img-aboutme-3 {
-  position: absolute;
-  top: 25%;
-  left: 45%;
-  width: 54%;
-}
-.img-aboutme-4 {
-  position: absolute;
-  top: 24%;
-  left: 5%;
-  width: 41%;
-  align-self: flex-start;
-}
-.img-aboutme-5 {
-  position: absolute;
-  top: 53%;
-  width: 54%;
-  border: 5px solid white;
-  align-self: flex-start;
-}
-.img-aboutme-6 {
-  position: absolute;
-  top: 76.5%;
-  left: 54%;
-  width: 36%;
-  border: 5px solid white;
-  align-self: flex-start;
-}
-.img-aboutme-7 {
-  position: absolute;
-  top: 53%;
-  left: 54%;
-  width: 31%;
-  border: 5px solid white;
-  align-self: flex-start;
-} */
