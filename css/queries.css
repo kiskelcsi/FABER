@@ -334,3 +334,9 @@
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 380px) {
+  .section__me {
+    height: 255vh;
+  }
+}
