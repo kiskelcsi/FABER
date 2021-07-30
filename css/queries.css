@@ -206,7 +206,7 @@
   .section__me {
     display: block;
     background-attachment: scroll;
-    height: 210vh;
+    height: 220vh;
   }
 
   .images-about-me {
@@ -271,7 +271,7 @@
     animation: moveInRight 2s ease-out;
   }
   .images-about-me {
-    top: -20%;
+    top: -27%;
   }
 
   .slider {
