@@ -31,9 +31,6 @@
   .dots {
     bottom: 15%;
   }
-  .dots__dot--active {
-    background-color: white;
-  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -209,7 +206,7 @@
   .section__me {
     display: block;
     background-attachment: scroll;
-    height: 255vh;
+    height: 210vh;
   }
 
   .images-about-me {
@@ -279,17 +276,20 @@
     top: 30%;
   }
   .btn_left {
-    top: 10%;
+    top: 14%;
     left: 1%;
   }
 
   .btn_right {
-    top: 10%;
+    top: 14%;
     right: 1%;
   }
 
   .dots {
-    bottom: 70%;
+    bottom: 60%;
+  }
+  .section__contact {
+    height: auto;
   }
   .cont_head {
     font-size: 3.2rem;
@@ -297,7 +297,7 @@
     letter-spacing: 0.5rem;
   }
   .cont_head-two {
-    top: 8%;
+    top: 8rem;
     font-size: 2.5rem;
     height: 2rem;
     margin-top: 1rem;
@@ -306,7 +306,7 @@
 
   .contact-form {
     width: 250%;
-    transform: translateX(-30%);
+    transform: translate(-30%, 30%);
   }
   footer {
     margin-top: 14rem;
@@ -320,7 +320,7 @@
   }
   .soc_icons {
     top: 1rem;
-    right: 9rem;
+    right: 13rem;
   }
 
   .copyright {
