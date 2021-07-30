@@ -320,7 +320,7 @@
   }
   .soc_icons {
     top: 1rem;
-    right: 13rem;
+    right: 10rem;
   }
 
   .copyright {
@@ -332,6 +332,7 @@
   }
   .fabche {
     text-align: center;
+    margin-bottom: 2rem;
   }
 }
 
