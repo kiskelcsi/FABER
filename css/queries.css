@@ -271,7 +271,7 @@
     animation: moveInRight 2s ease-out;
   }
   .images-about-me {
-    top: -27%;
+    top: -24%;
   }
 
   .slider {
@@ -324,7 +324,7 @@
   }
   .soc_icons {
     top: 1rem;
-    right: 10rem;
+    right: 9rem;
   }
 
   .copyright {
