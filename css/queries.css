@@ -251,6 +251,10 @@
 }
 
 @media only screen and (max-width: 576px) {
+  .nav-sidebar {
+    max-width: 70%;
+  }
+
   .heading-primary-main {
     font-size: 2rem;
     font-weight: 300;
